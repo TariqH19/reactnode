@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React PayPal JS SDK Standard Integration</title>
+    <!-- Apple Pay SDK -->
+    <script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+
+    <!-- PayPal SDK with Apple Pay components -->
+    <script
+      src="https://www.paypal.com/sdk/js?components=applepay&buyer-country=GB&currency=GBP&client-id=<%= clientId %>&merchant-id=<%= merchantId %>"
+      data-client-token="<%= clientToken %>"
+      data-partner-attribution-id="APPLEPAY"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="main.jsx"></script>
+  </body>
+</html>
